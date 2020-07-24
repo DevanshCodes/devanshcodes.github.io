@@ -1,633 +1,171 @@
-.switch-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    @include mobile {
-      top: 10px;
-      right: 20px;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: $yellow;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $white;
+  color: $dark-grey;
+  font-family: $Apercu;
+  line-height: 1.5;
+  width: 100%;
+
+  &.night {
+    background-color: $night;
+    color: $slate;
+    ::selection {
+      color: $black;
+      background: $yellow;
     }
-    .sun,
-    .moon {
-      width: 17px;
-      height: 17px;
-    }
-    .sun {
-      background: url("/images/switch/sun.svg") no-repeat center;
-      background-size: 100%;
-    }
-    .moon {
-      background: url("/images/switch/moon.svg") no-repeat center;
-      background-size: 100%;
-    }
-    .toggle-wrapper {
-      margin: 10px;
-      #switch {
-        height: 0;
-        width: 0;
-        visibility: hidden;
-        position: absolute;
-        &:checked + label {
-          background: $green;
-        }
-        &:checked + label:after {
-          left: calc(100% - 3px);
-          transform: translateX(-100%);
-        }
+    .switch-wrapper {
+      .sun {
+        background: url("/images/switch/sun-white.svg") no-repeat center;
+        background-size: 100%;
       }
-  
-      label {
-        cursor: pointer;
-        text-indent: -9999px;
-        width: 45px;
-        height: 25px;
-        background: grey;
-        display: block;
-        border-radius: 100px;
-        position: relative;
-        &:after {
-          @include transition;
-          content: "";
-          position: absolute;
-          top: 3px;
-          left: 3px;
-          width: 19px;
-          height: 19px;
-          background: #fff;
-          border-radius: 100%;
-        }
+      .moon {
+        background: url("/images/switch/moon-white.svg") no-repeat center;
+        background-size: 100%;
       }
+    }
+    a,
+    strong,
+    .intro,
+    .skills .skillz__category__label,
+    .experience .job__time,
+    .footer__copyright,
+    .status {
+      color: $off-white;
+    }
+    .section__content .underline-link:after {
+      background: $off-white;
     }
   }
-  .intro {
-    padding: 120px 100px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 1440px;
-    margin: 0 auto;
-    @include weird-medium {
-      padding: 120px 70px;
-    }
-    @include phablet {
-      padding: 120px 50px;
-    }
-    @include mobile {
-      padding: 70px 50px;
-    }
-  
-    &__hello,
-    &__tagline {
-      font-size: 2.5rem;
-      @include desktop {
-        font-size: 2.25rem;
-      }
-      @include tablet {
-        font-size: 2rem;
-      }
-      @include phablet {
-        font-size: 1.75rem;
-      }
-      @include small-mobile {
-        font-size: 1.5rem;
-      }
-      @include tiny-mobile {
-        font-size: 1.4rem;
-      }
-      .emoji {
-        width: 40px;
-        height: 40px;
-        @include desktop {
-          width: 35px;
-          height: 35px;
-        }
-        @include tablet {
-          width: 30px;
-          height: 30px;
-        }
-        @include small-mobile {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-    &__hello {
-      font-weight: 300;
-      .wave-hand {
-        background-image: url("/images/emojis/handWave.png");
-        position: absolute;
-        margin-left: 10px;
-        cursor: pointer;
-  
-        &.animated {
-          animation-duration: 1s;
-          animation-fill-mode: both;
-        }
-        &.wave {
-          animation-name: wave;
-        }
-  
-        @keyframes wave {
-          from {
-            transform: none;
-          }
-          15% {
-            transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-          }
-          30% {
-            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
-          }
-          45% {
-            transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
-          }
-          60% {
-            transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-          }
-          75% {
-            transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
-          }
-          to {
-            transform: none;
-          }
-        }
-      }
-    }
-    &__tagline {
-      font-weight: 300;
-      max-width: 700px;
-      .name {
-        font-weight: 700;
-      }
-      .technologist {
-        background-image: url("/images/emojis/technologist.png");
-      }
-    }
-    &__contact {
-      font-size: 1.25rem;
-      font-weight: 400;
-      @include phablet {
-        font-size: 1rem;
-      }
-      .emoji {
-        &.pointer {
-          background-image: url("/images/emojis/pointright.png");
-          width: 30px;
-          height: 30px;
-          margin: 0 5px;
-          vertical-align: text-bottom;
-          @include phablet {
-            width: 25px;
-            height: 25px;
-          }
-        }
-      }
-      .highlight-link {
-        @include transition;
-        font-weight: 400;
-        text-decoration: none;
-        display: inline-block;
-        padding: 2px 3px;
-        text-decoration: none;
-        box-shadow: inset 0 -3px 0 $blue;
-        &:hover {
-          box-shadow: inset 0 -33px 0 0 $blue;
-          color: $white;
-        }
-      }
-    }
-  }
-  html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  ::selection {
-    background: $yellow;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: $white;
-    color: $dark-grey;
-    font-family: $Apercu;
-    line-height: 1.5;
-    width: 100%;
-  
-    &.night {
-      background-color: $night;
-      color: $slate;
-      ::selection {
-        color: $black;
-        background: $yellow;
-      }
-      .switch-wrapper {
-        .sun {
-          background: url("/images/switch/sun-white.svg") no-repeat center;
-          background-size: 100%;
-        }
-        .moon {
-          background: url("/images/switch/moon-white.svg") no-repeat center;
-          background-size: 100%;
-        }
-      }
-      a,
-      strong,
-      .intro,
-      .skills .skillz__category__label,
-      .experience .job__time,
-      .footer__copyright,
-      .status {
-        color: $off-white;
-      }
-      .section__content .underline-link:after {
-        background: $off-white;
-      }
-    }
-  }
-  
-  a {
+}
+
+a {
+  @include transition;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 700;
+  color: $black;
+}
+
+.emoji {
+  display: inline-block;
+  vertical-align: text-top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-link {
+  @include transition;
+  font-weight: 700;
+  display: inline-block;
+  background-color: transparent;
+  white-space: nowrap;
+  &:after {
     @include transition;
-    text-decoration: none;
-    font-weight: 700;
-    color: inherit;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
-  }
-  
-  img {
-    max-width: 100%;
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: "";
+    background: url("/images/arrow.png") no-repeat center;
+    background-size: 100%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
     vertical-align: middle;
   }
-  
-  strong {
-    font-weight: 700;
-    color: $black;
+  &:hover:after {
+    transform: translateX(7px);
   }
-  
-  .emoji {
-    display: inline-block;
-    vertical-align: text-top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: center;
-    padding: 100px 170px;
-    @include thirteen {
-      padding: 100px;
-    }
-    @include desktop {
-      padding: 50px;
-    }
-    @include tablet {
-      display: block;
-    }
-    @include mobile {
-      padding: 50px 35px;
-    }
-    &__title {
-      flex-shrink: 0;
-      width: 200px;
-      margin-right: 70px;
-      color: $blue;
-      text-transform: uppercase;
-      text-align: right;
-      font-weight: 700;
-      letter-spacing: 2px;
-      @include desktop {
-        margin-right: 50px;
-      }
-      @include little-desktop {
-        width: 150px;
-      }
-      @include tablet {
-        text-align: left;
-        width: auto;
-      }
-    }
-    &__content {
-      font-weight: 300;
-      font-size: 1rem;
-      width: 100%;
-      max-width: 650px;
-      @include tablet {
-        padding-top: 30px;
-        padding-left: 50px;
-      }
-      @include mobile {
-        padding-left: 30px;
-      }
-      p {
-        margin-top: 0;
-        margin-bottom: 25px;
-      }
-      .underline-link {
-        position: relative;
-        display: inline-block;
-        &:after {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: $black;
-          content: "";
-          opacity: 0;
-          transition: height 0.3s, opacity 0.3s, transform 0.3s;
-          transform: translateY(-5px);
-        }
-        &:hover,
-        &:focus {
-          &:after {
-            height: 2px;
-            border-radius: 3px;
-            opacity: 1;
-            transform: translateY(-2px);
-          }
-        }
-      }
-    }
-  }
-  
-  .arrow-link {
-    @include transition;
-    font-weight: 700;
-    display: inline-block;
-    background-color: transparent;
-    white-space: nowrap;
-    &:after {
-      @include transition;
-      position: relative;
-      bottom: 2px;
-      margin-left: 15px;
-      content: "";
-      background: url("/images/arrow.png") no-repeat center;
-      background-size: 100%;
-      width: 15px;
-      height: 15px;
-      display: inline-block;
-      vertical-align: middle;
-    }
-    &:hover:after {
-      transform: translateX(7px);
-    }
-  }
-  
-  .small {
-    font-family: "Inconsolata", monospace;
-    font-size: 0.85rem;
-    display: inline-block;
-    margin-top: 15px;
-    &:after {
-      display: none;
-    }
-  }
-  
-  #top-button {
-    @include transition;
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 40px;
-    position: fixed;
-    bottom: 25px;
-    right: 10px;
-    cursor: pointer;
+}
+
+.small {
+  font-family: "Inconsolata", monospace;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 15px;
+  &:after {
     display: none;
-    @include desktop {
-      bottom: 20px;
-      right: 7px;
-      width: 35px;
-    }
-    @include mobile {
-      bottom: 15px;
-      right: 3px;
-    }
-  
-    &:hover,
-    &:focus {
-      transform: translateY(-10px);
-    }
-    img {
-      width: 100%;
-    }
   }
-  
-  .waypoint {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-    transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
-      transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+}
+
+#top-button {
+  @include transition;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  @include desktop {
+    bottom: 20px;
+    right: 7px;
+    width: 35px;
   }
-  
-  .in-view {
-    opacity: 1;
-    transform: translateZ(0);
+  @include mobile {
+    bottom: 15px;
+    right: 3px;
   }
-  .skills {
-    .skillz {
-      display: flex;
-      justify-content: space-between;
-      @include weird-medium {
-        flex-wrap: wrap;
-      }
-      &__category {
-        @include weird-medium {
-          width: 47%;
-          margin-right: 5px;
-          margin-bottom: 25px;
-        }
-        &__label {
-          font-weight: 700;
-          color: $black;
-          text-transform: uppercase;
-        }
-        &__item {
-          margin: 3px 0;
-          font-size: 0.9rem;
-        }
-      }
-    }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
   }
-  .experience {
-    .jobs {
-      margin-bottom: 100px;
-    }
-    .job {
-      margin-bottom: 25px;
-      .time-place {
-        display: flex;
-        justify-content: space-between;
-        @include mobile {
-          display: block;
-        }
-      }
-      &__company {
-        font-weight: 700;
-      }
-      &__time {
-        font-size: 0.9rem;
-        font-family: "Inconsolata", monospace;
-        @include mobile {
-          font-size: 0.8rem;
-        }
-      }
-    }
-    .arrow-link {
-      font-size: 1.25rem;
-      &:after {
-        width: 20px;
-        height: 20px;
-      }
-    }
+  img {
+    width: 100%;
   }
-  .other-projects {
-    .project {
-      max-width: 600px;
-      margin-bottom: 50px;
-      &__name {
-        margin-bottom: 10px;
-      }
-      p {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-      }
-      &__used {
-        &__item {
-          display: inline-block;
-          margin: 3px 3px 3px 0;
-          font-family: "Inconsolata", monospace;
-          font-size: 0.75rem;
-          font-weight: 700;
-          padding: 2px 7px;
-          border-radius: 3px;
-          color: $blue;
-          border: 1px solid $blue;
-          background: transparent;
-          &:first-of-type {
-            margin-left: 0;
-          }
-        }
-      }
-    }
-  }
-  .footer {
-    padding: 50px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include desktop {
-      padding: 50px;
-    }
-    @include weird-medium {
-      display: block;
-    }
-    @include mobile {
-      padding: 50px 30px;
-    }
-    &__copyright {
-      font-weight: 700;
-      width: 200px;
-      @include weird-medium {
-        width: auto;
-        text-align: center;
-        margin-bottom: 25px;
-      }
-      .top,
-      .bottom {
-        @include weird-medium {
-          display: inline-block;
-        }
-        @include mobile {
-          display: block;
-        }
-      }
-      .emoji {
-        width: 20px;
-        height: 20px;
-        margin: 0 3px;
-        vertical-align: text-bottom;
-      }
-    }
-    &__links {
-      @include weird-medium {
-        display: flex;
-        justify-content: center;
-      }
-      a {
-        position: relative;
-        display: inline-block;
-        color: $blue !important;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin: 0 15px;
-        outline: none;
-        @include desktop {
-          margin: 0 10px;
-        }
-        &:after {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: $blue;
-          content: "";
-          opacity: 0;
-          transition: height 0.3s, opacity 0.3s, transform 0.3s;
-          transform: translateY(-5px);
-          @include little-desktop {
-            display: none;
-          }
-        }
-        &:hover:after,
-        &:focus:after {
-          height: 2px;
-          border-radius: 3px;
-          opacity: 1;
-          transform: translateY(0px);
-        }
-        .text {
-          font-size: 0.9rem;
-          display: inline;
-          letter-spacing: 1px;
-          @include little-desktop {
-            display: none;
-          }
-        }
-      }
-      img {
-        display: none;
-        width: 22px;
-        @include little-desktop {
-          display: inline-block;
-        }
-      }
-    }
-  }
-  
+}
+
+.waypoint {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1),
+    transform 0.6s cubic-bezier(0.694, 0, 0.335, 1);
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateZ(0);
+}
+
