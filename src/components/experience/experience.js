@@ -26,6 +26,7 @@ class Experience extends Component {
                     <div class="job__time">{experience.time}</div>
                   </div>
                   <div class="job__position">{experience.position}</div>
+                  <div className="jobDescription">{experience.description}</div>
                 </div>
               )
             })}

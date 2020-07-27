@@ -1,4 +1,10 @@
 .skills {
+  .other {
+    margin-top: 40px;
+    @include mobile {
+      margin-top: 15px;
+    }
+  }
   .skillz {
     display: flex;
     justify-content: space-between;

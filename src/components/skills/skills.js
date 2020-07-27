@@ -47,6 +47,14 @@ class Skills extends Component {
               </ul>
             </div>
           </div>
+          <div class="skillz__category__label other">Others</div>
+          <div>
+            <ul>
+              {skills.others.map(thing => {
+                return <li class="skillz__category__item">{thing}</li>
+              })}
+            </ul>
+          </div>
         </div>
       </section>
     )
