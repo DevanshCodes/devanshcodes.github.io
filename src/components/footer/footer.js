@@ -13,12 +13,12 @@ class Footer extends Component {
       <footer class="footer">
         <div class="footer__copyright">
           <div class="top">
-            <span>Designed &amp; Developed by</span>
+            {/* <span> &amp;</span> */}
           </div>
           <div class="bottom">
-            <span>Brittany Chiang</span>
-            <img class="emoji" src="/images/emojis/rockon.png" alt="emoji" />
-            <span>2018</span>
+            <span></span>
+            {/* <img class="emoji" src="/images/emojis/rockon.png" alt="emoji" /> */}
+            <span></span>
           </div>
         </div>
         <div class="footer__links">
