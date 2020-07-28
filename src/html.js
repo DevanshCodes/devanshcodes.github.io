@@ -21,6 +21,12 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `./mainmain.js`,
+          }}
+        />
+        `
       </body>
     </html>
   )

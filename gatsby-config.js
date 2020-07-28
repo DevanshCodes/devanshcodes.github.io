@@ -22,6 +22,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://unpkg.com/scrollreveal', // Change to the script filename
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
