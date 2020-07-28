@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "./mainpage.scss"
-// import main from "./main"
 import Switch from "./switch/switch"
 import Intro from "./intro/intro"
 import SectionBackground from "./section-background/section-background"
@@ -10,7 +9,6 @@ import FeaturedProjects from "./featured-projects/featured-projects"
 import OtherProjects from "./other-projects/other-projects"
 import Footer from "./footer/footer"
 import Whatsnext from "./whatsnext/whatsnext"
-import Loadable from "@loadable/component"
 
 class MainPage extends Component {
   constructor(props) {
@@ -19,19 +17,12 @@ class MainPage extends Component {
   }
 
   componentDidMount() {
-    // main()
-    // if (typeof window !== `undefined`) {
-    //   return main()
-    // }
-    // else{
-    //   return null
-    // }
+    if (typeof window !== `undefined`) {
+      const myExtScript = require("../main")
+    }
   }
 
   render() {
-    if (typeof window !== `undefined`) {
-      const myExtScript = require("../mainmain")
-    }
     return (
       <div className="app" ref={el => (this.div = el)}>
         <div ref={el => (this.div = el)}>
