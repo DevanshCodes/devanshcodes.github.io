@@ -12,13 +12,15 @@ class Footer extends Component {
     return (
       <footer class="footer">
         <div class="footer__copyright">
-          <div class="top">
-            {/* <span> &amp;</span> */}
-          </div>
+          <div class="top">{/* <span> &amp;</span> */}</div>
           <div class="bottom">
-            <span></span>
-            {/* <img class="emoji" src="/images/emojis/rockon.png" alt="emoji" /> */}
-            <span></span>
+            <a
+              href="https://github.com/DevanshCodes/devanshcodes.github.io"
+              target="_blank"
+            >
+              <img class="emoji" src="/images/github.svg" alt="emoji" />
+              <span className="fork">Fork it on GitHub</span>
+            </a>
           </div>
         </div>
         <div class="footer__links">

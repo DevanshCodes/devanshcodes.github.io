@@ -9,6 +9,7 @@ import Experience from "./experience/experience"
 import FeaturedProjects from "./featured-projects/featured-projects"
 import OtherProjects from "./other-projects/other-projects"
 import Footer from "./footer/footer"
+import Whatsnext from "./whatsnext/whatsnext"
 
 class MainPage extends Component {
   constructor(props) {
@@ -17,7 +18,9 @@ class MainPage extends Component {
   }
 
   componentDidMount() {
-    main()
+    if (typeof window !== `undefined`) {
+      main()
+    }
   }
 
   render() {
@@ -31,6 +34,7 @@ class MainPage extends Component {
           <Experience />
           <FeaturedProjects />
           <OtherProjects />
+          <Whatsnext />
           <Footer />
           <button id="top-button">
             <img src="images/emojis/pointing-up.png" alt="" />

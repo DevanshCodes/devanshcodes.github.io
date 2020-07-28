@@ -1,8 +1,16 @@
 .other-projects {
   .project {
+    .github {
+      background: url("/images/GitHubDay.svg") no-repeat center;
+      background-size: 100%;
+      width: 20px;
+      height: 20px;
+    }
     max-width: 600px;
     margin-bottom: 50px;
     &__name {
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 10px;
     }
     p {

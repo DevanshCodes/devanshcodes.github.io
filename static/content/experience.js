@@ -3,7 +3,7 @@ const experiences = [
     company: "Codeuino",
     url: "https://www.codeuino.org/",
     time: "June 2020 - Present",
-    position: "Software Developer",
+    position: "Software Developer Intern",
     description:
       "Working on an Open-Source project SpansBerry which aims to be a discussion platform, with initially sorting various topics for discussion in trello board like layout and on Discussion having smart features such as Setting up meeting, Scheduling tasks, etc.",
   },
@@ -11,7 +11,7 @@ const experiences = [
     company: "Electrono Solutions, Bangalore",
     url: "https://electronosolutions.com/",
     time: "May 2020 - June 2020",
-    position: "Electrical Engineer",
+    position: "Electrical Engineering Intern",
     description:
       "Worked on implementing a MicroGrid in MATLAB and Simulink, the Grid consisted of the Renewable Energy Source i.e. Solar PVs and Energy Storage System for storing surplus energy. Main pupose of the project was to simulate a small grid for 24Hrs with Renewable Sources, independent of Main  Grid.",
   },
@@ -27,7 +27,7 @@ const experiences = [
     company: "Pepper",
     url: "https://www.peppercontent.in/",
     time: "June 2019 - August 2019",
-    position: "UI/UX Designer ",
+    position: "UI/UX Designer Intern ",
     description:
       "Worked on the Official main website of Pepper, and other linked websites. Also designed the Android app for sub product Charcha.",
   },

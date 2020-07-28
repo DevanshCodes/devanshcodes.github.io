@@ -30,9 +30,15 @@ class FeaturedProjects extends Component {
                 discussions under different categories and start/continue
                 discussion on any topic.
               </p>
+              <div className="projectUsed">
+                <span className="projectUsedItem">ReactJS</span>
+                <span className="projectUsedItem">NodeJS</span>
+                <span className="projectUsedItem">ExpressJS</span>
+                <span className="projectUsedItem">MongoDB</span>
+                <span className="projectUsedItem">GraphQL</span>
+              </div>
             </figcaption>
           </div>
-
           <div class="project screentime">
             <figure class="project__pic phones">
               <a
@@ -64,6 +70,11 @@ class FeaturedProjects extends Component {
                 Annual Technical Fest. Users can track Events, Order Food
                 online, keep track of Kind Store points and Event Signings!
               </p>
+              <div className="projectUsed">
+                <span className="projectUsedItem">AdobeXD</span>
+                <span className="projectUsedItem">Adobe Photoshop</span>
+                <span className="projectUsedItem">Adobe Illustrator</span>
+              </div>
             </figcaption>
           </div>
 
@@ -84,6 +95,13 @@ class FeaturedProjects extends Component {
                 which user can join a room with a roomID and chat anonymously
                 with preferred username.
               </p>
+              <div className="projectUsed">
+                <span className="projectUsedItem">ReactJS</span>
+                <span className="projectUsedItem">NodeJS</span>
+                <span className="projectUsedItem">ExpressJS</span>
+                <span className="projectUsedItem">MongoDB</span>
+                <span className="projectUsedItem">Socket.IO</span>
+              </div>
             </figcaption>
           </div>
         </div>

@@ -3,6 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .fork{
+      margin-left: 5px;
+    }
     @include desktop {
       padding: 50px;
     }

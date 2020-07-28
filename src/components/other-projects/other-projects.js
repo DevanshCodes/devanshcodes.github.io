@@ -20,6 +20,7 @@ class OtherProjects extends Component {
                   <a href={project.url} target="_blank" class="arrow-link">
                     {project.name}
                   </a>
+                  {/* <div class={project.type}></div> */}
                 </div>
                 <p>{project.description}</p>
                 <div class="project__used">
