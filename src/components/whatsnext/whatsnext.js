@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import "./Whatsnext.scss"
+import "./whatsnext.scss"
 
 class Whatsnext extends Component {
   constructor(props) {
