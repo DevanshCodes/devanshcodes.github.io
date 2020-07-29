@@ -21,7 +21,7 @@ class Whatsnext extends Component {
             that will help me with the same. If you do find my work interesting,
             do hit me up!
           </p>
-          <div class="intro__contact">
+          <div class="intro__contact1">
             <span>Get in touch </span>
             <span class="emoji pointer"></span>
             <span>
