@@ -7,10 +7,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-sass',
+      resolve: "gatsby-plugin-sass",
       options: {
         data: `@import "./src/styles/styles";`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -22,9 +22,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-load-script',
+      resolve: "gatsby-plugin-load-script",
       options: {
-        src: 'https://unpkg.com/scrollreveal', // Change to the script filename
+        src: "https://unpkg.com/scrollreveal", // Change to the script filename
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
       },
     },
     {
