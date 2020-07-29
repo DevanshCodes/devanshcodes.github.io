@@ -16,7 +16,7 @@ const experiences = [
       "Worked on implementing a MicroGrid in MATLAB and Simulink, the Grid consisted of the Renewable Energy Source i.e. Solar PVs and Energy Storage System for storing surplus energy. Main pupose of the project was to simulate a small grid for 24Hrs with Renewable Sources, independent of Main  Grid.",
   },
   {
-    company: "Depament of Visual Media",
+    company: "Department of Visual Media",
     url: "https://www.bits-dvm.org/",
     time: "August 2018 - Present",
     position: "UI/UX Designer, CoStAAn (Head)",
