@@ -19,7 +19,7 @@ const experiences = [
     company: "Depament of Visual Media",
     url: "https://www.bits-dvm.org/",
     time: "August 2018 - Present",
-    position: "UI/UX Designer, Head",
+    position: "UI/UX Designer, CoStAAn (Head)",
     description:
       "Designed the official Websites, official Android as well as iOS apps and other minor websites for all the major fests (OASIS, APOGEE, BOSM) of BITS Pilani. These Apps and Websites were downloaded and used by 1000+ users, both by BITSians as well as NonBITSians registering for the fest.",
   },
