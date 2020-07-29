@@ -19,7 +19,7 @@ class Experience extends Component {
                 <div class="job">
                   <div class="time-place">
                     <div class="job__company">
-                      <a href="{{job.url}}" target="_blank">
+                      <a href={experience.url} target="_blank">
                         {experience.company}
                       </a>
                     </div>
@@ -31,8 +31,7 @@ class Experience extends Component {
               )
             })}
           </div>
-
-          <a href="{{site.resume}}" target="_blank" class="arrow-link">
+          <a href="/resume.pdf" target="_blank" class="arrow-link">
             View My Resume
           </a>
         </div>

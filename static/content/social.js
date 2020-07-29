@@ -1,27 +1,27 @@
 const social = [
   {
     title: "Email",
-    url: "https://www.codeuino.org/",
+    url: "mailto:devanshagarwal50@gmail.com",
   },
   {
     title: "twitter",
-    url: "https://www.codeuino.org/",
+    url: "https://twitter.com/devanshagarwal_",
   },
   {
     title: "instagram",
-    url: "https://www.codeuino.org/",
+    url: "https://www.instagram.com/devansh_ag_/",
   },
   {
-    title: "codepen",
-    url: "https://www.codeuino.org/",
+    title: "facebook",
+    url: "https://www.facebook.com/devansh.agarwal.944/",
   },
   {
     title: "github",
-    url: "https://www.codeuino.org/",
+    url: "https://github.com/DevanshCodes",
   },
   {
     title: "linkedin",
-    url: "https://www.codeuino.org/",
+    url: "https://www.linkedin.com/in/devansh-agarwal-739702189/",
   },
 ]
 

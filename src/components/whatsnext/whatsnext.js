@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "./whatsnext.scss"
-
 class Whatsnext extends Component {
   constructor(props) {
     super(props)

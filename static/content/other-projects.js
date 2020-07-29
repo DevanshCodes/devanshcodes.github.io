@@ -48,10 +48,8 @@ const otherProjects = [
     name: "Official BOSM Website",
     description:
       "Website designed for BOSM, BITS Pilani's annual Sports Fest. This website was accessed by 1000+ users for registrations and publicity. User can see the fest details, events and register for the same.",
-    code:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
-    url:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
+    code: "https://www.behance.net/gallery/86586063/BOSM-19-Main-Website",
+    url: "https://www.behance.net/gallery/86586063/BOSM-19-Main-Website",
     type: "behance",
     used: ["AdobeXD", "Adobe Photoshop", "Adobe Illustrator"],
   },
@@ -59,10 +57,8 @@ const otherProjects = [
     name: "Secret Confessions",
     description:
       "A simple app created in Django, in which user can post status without loosing anonymity and interact with the post such as Liking and Commenting. User can use this app by creating a username which can be of their choice",
-    code:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
-    url:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
+    code: "https://github.com/DevanshCodes/Secret-Sayings",
+    url: "https://github.com/DevanshCodes/Secret-Sayings",
     type: "behance",
     used: ["Python", "Django"],
   },
@@ -70,10 +66,8 @@ const otherProjects = [
     name: "ToDo List App",
     description:
       "Starter ToDo list app created in Django, Python. Users can use it for managing the tasks throughout their day.",
-    code:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
-    url:
-      "https://www.behance.net/gallery/88603277/Oasis-19-Official-Android-App",
+    code: "https://github.com/DevanshCodes/TodoListApp",
+    url: "https://github.com/DevanshCodes/TodoListApp",
     type: "behance",
     used: ["Python", "Django"],
   },

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import EmploymentStatus from "../employment-status/employment-status"
 import "./section-background.scss"
 
 class SectionBackground extends Component {
@@ -41,6 +42,7 @@ class SectionBackground extends Component {
             computer games, current liking being Rainbow Six Siege. Apart from
             that I also do enjoy playing Badminton.
           </p>
+          <EmploymentStatus />
         </div>
       </section>
     )

@@ -14,13 +14,19 @@ class FeaturedProjects extends Component {
         <div class="section__content">
           <div class="project blistabloc">
             <figure class="project__pic">
-              <a href="https://blistabloc.com/" target="_blank">
+              <a
+                href="https://github.com/codeuino/community-forum-frontend/"
+                target="_blank"
+              >
                 <img src="/images/spansberry.png" alt=""></img>
               </a>
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a href="https://blistabloc.com/" target="_blank">
+                <a
+                  href="https://github.com/codeuino/community-forum-backend/"
+                  target="_blank"
+                >
                   SpansBerry
                 </a>
               </div>
@@ -41,10 +47,7 @@ class FeaturedProjects extends Component {
           </div>
           <div class="project screentime">
             <figure class="project__pic phones">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.starry.management"
-                target="_blank"
-              >
+              <a href="https://www.behance.net/devanshag" target="_blank">
                 <div class="phone">
                   <img src="/images/Apogee1.png" alt="" />
                 </div>
@@ -58,10 +61,7 @@ class FeaturedProjects extends Component {
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.starry.management"
-                  target="_blank"
-                >
+                <a href="https://www.behance.net/devanshag" target="_blank">
                   Official Apogee'20 App
                 </a>
               </div>
@@ -80,13 +80,19 @@ class FeaturedProjects extends Component {
 
           <div class="project interventions">
             <figure class="project__pic">
-              <a href="https://interventions.design/" target="_blank">
+              <a
+                href="https://devanshcodes.github.io/Anonymous-Discussion-Front/"
+                target="_blank"
+              >
                 <img src="/images/anonymousDiscussion.png" alt="" />
               </a>
             </figure>
             <figcaption class="project__caption">
               <div class="project__name">
-                <a href="https://interventions.design/" target="_blank">
+                <a
+                  href="https://github.com/DevanshCodes/Anonymous-Discussion-Front/"
+                  target="_blank"
+                >
                   Anonymous Discussion
                 </a>
               </div>
