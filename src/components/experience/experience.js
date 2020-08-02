@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import experiences from "../../../static/content/experience"
+import resume from '../resume/Resume.pdf'
 import "./experience.scss"
 
 class Experience extends Component {
@@ -31,7 +32,7 @@ class Experience extends Component {
               )
             })}
           </div>
-          <a href="/resume.pdf" target="_blank" class="arrow-link">
+          <a href={resume} target="_blank" class="arrow-link">
             View My Resume
           </a>
         </div>
