@@ -35,6 +35,7 @@ class FeaturedProjects extends Component {
                 community members which can easily organize various topics for
                 discussions under different categories and start/continue
                 discussion on any topic.
+                Worked on the Figma Designs as well as Development of the same.
               </p>
               <div className="projectUsed">
                 <span className="projectUsedItem">ReactJS</span>
@@ -42,6 +43,7 @@ class FeaturedProjects extends Component {
                 <span className="projectUsedItem">ExpressJS</span>
                 <span className="projectUsedItem">MongoDB</span>
                 <span className="projectUsedItem">GraphQL</span>
+                <span className="projectUsedItem">Figma</span>
               </div>
             </figcaption>
           </div>
