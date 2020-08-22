@@ -2,7 +2,7 @@ const experiences = [
   {
     company: "Codeuino",
     url: "https://www.codeuino.org/",
-    time: "June 2020 - Present",
+    time: "May 2020 - August 2020",
     position: "Software Developer Intern",
     description:
       "Working on an Open-Source project SpansBerry which aims to be a discussion platform, with initially sorting various topics for discussion in trello board like layout and on Discussion having smart features such as Setting up meeting, Scheduling tasks, etc.",
