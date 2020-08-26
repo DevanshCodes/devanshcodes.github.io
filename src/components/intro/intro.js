@@ -39,7 +39,7 @@ class Intro extends Component {
           </h3>
         </div>
         <div>
-          <img src="/images/hello.svg" alt="hello" className="hello" />
+          <img src="/images/hello2.svg" alt="hello" className="hello" />
         </div>
       </div>
     )
