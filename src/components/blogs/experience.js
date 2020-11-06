@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import experiences from "../../../static/content/experience"
-import resume from '../resume/Resume.pdf'
-import "./experience.scss"
+import PropTypes from 'prop-types'
+import { Link, graphql, StaticQuery } from 'gatsby'
 
 class Experience extends Component {
   constructor(props) {
@@ -10,6 +9,10 @@ class Experience extends Component {
   }
 
   render() {
+
+    const { data } = this.props;
+    const { edges: posts } = data.allMarkdownRemark;
+
     return (
       <section class="section experience">
         <div class="section__title">Experience</div>
@@ -17,14 +20,14 @@ class Experience extends Component {
           <div class="jobs">
             {experiences.map(experience => {
               return (
-                <div className="job">
-                  <div className="time-place">
-                    <div className="job__company">
+                <div class="job">
+                  <div class="time-place">
+                    <div class="job__company">
                       <a href={experience.url} target="_blank">
                         {experience.company}
                       </a>
                     </div>
-                    <div className="job__time">{experience.time}</div>
+                    <div class="job__time">{experience.time}</div>
                   </div>
                   <div class="job__position">{experience.position}</div>
                   <div className="jobDescription">{experience.description}</div>
