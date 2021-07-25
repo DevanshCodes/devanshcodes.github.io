@@ -10,7 +10,6 @@ import OtherProjects from "./other-projects/other-projects"
 import Footer from "./footer/footer"
 import Whatsnext from "./whatsnext/whatsnext"
 import BlogRoll from './blogs/blogroll'
-// import Blogs from "./blogs/blogs"
 
 class MainPage extends Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class MainPage extends Component {
           <Experience />
           <FeaturedProjects />
           <OtherProjects />
-          <BlogRoll/>
+          {/* <BlogRoll/> */}
           <Whatsnext />
           {/* <Blogs/> */}
           <Footer />

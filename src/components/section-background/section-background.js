@@ -24,9 +24,7 @@ class SectionBackground extends Component {
             >
               Birla Institute of Technology and Science, Pilani
             </a>
-            , currently in my 3rd Year. While most of my Science Degree courses
-            being completed, I'll be beginning with my Engineering Degree
-            courses from this academic year.
+            , graduating in 2023.
           </p>
 
           <p>
@@ -39,8 +37,7 @@ class SectionBackground extends Component {
 
           <p>
             <strong>When I'm not working</strong>, I'll probably be engaged in
-            computer games, current liking being Rainbow Six Siege. Apart from
-            that I also do enjoy playing Badminton.
+            solving problems on leetcode or interviewbit or could just be playing computer games.
           </p>
           <EmploymentStatus />
         </div>

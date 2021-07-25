@@ -20,9 +20,7 @@ class Intro extends Component {
 
           <h2 class="intro__tagline">
             I'm
-            <span class="name"> Devansh Agarwal</span>, a design-minded
-            full-stack web developer, focused on designing and developing
-            beautiful interfaces.
+            <span class="name"> Devansh Agarwal</span>, 4th Year undergrad at BITS Pilani. I'm a design-minded web-developer with a knack for problem solving.
           </h2>
           <h3 class="intro__contact">
             <span>Get in touch </span>
@@ -38,7 +36,7 @@ class Intro extends Component {
             </span>
           </h3>
         </div>
-        <div>
+        <div className="preImage">
           <img src="/images/hello2.svg" alt="hello" className="hello" />
         </div>
       </div>

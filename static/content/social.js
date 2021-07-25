@@ -8,14 +8,6 @@ const social = [
     url: "https://twitter.com/devanshagarwal_",
   },
   {
-    title: "instagram",
-    url: "https://www.instagram.com/devansh_ag_/",
-  },
-  {
-    title: "facebook",
-    url: "https://www.facebook.com/devansh.agarwal.944/",
-  },
-  {
     title: "github",
     url: "https://github.com/DevanshCodes",
   },

@@ -15,7 +15,7 @@ class EmploymentStatus extends Component {
           <div class="status__light__ring"></div>
           <div class="status__light__led"></div>
         </div>
-        <div class="status__message">Looking for Summer 2021 Internship</div>
+        <div class="status__message">Looking for Summer 2022 Internship</div>
       </a>
     )
   }

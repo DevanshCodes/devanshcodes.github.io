@@ -1,11 +1,19 @@
 const experiences = [
   {
+    company: "Haast",
+    url: "https://haast.co//",
+    time: "Jan 2021 - July 2021",
+    position: "Software Developer Intern",
+    description:
+      "Worked on an AngularJS based Property Development Dashboard which automates your Property development tasks and enables you to manage easily. Using AngularJS and MaterialAngular for building the pixel-perfect frontend UI and using Firebases functions for backend.",
+  },
+  {
     company: "Codeuino",
     url: "https://www.codeuino.org/",
     time: "May 2020 - August 2020",
     position: "Software Developer Intern",
     description:
-      "Working on an Open-Source project SpansBerry which aims to be a discussion platform, with initially sorting various topics for discussion in trello board like layout and on Discussion having smart features such as Setting up meeting, Scheduling tasks, etc.",
+      "Built an open-source project Spansberry, a discussion platform with a dashboard to manage different projects and issues of an open-source organisation for which org members can start a discussion on. \n Worked as a full-stack developer and lead the development using ReactJS, NodeJS, MongoDB, Socket.IO.",
   },
   {
     company: "Electrono Solutions, Bangalore",

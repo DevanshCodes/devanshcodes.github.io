@@ -8,7 +8,7 @@ class Whatsnext extends Component {
 
   render() {
     return (
-      <section class="section1 background">
+      <section class="section background">
         <div class="section__title">What's Next</div>
         <div class="section__content">
           <p>

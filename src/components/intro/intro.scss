@@ -1,6 +1,5 @@
 .hello {
   width: 550px;
-  height: 100vh;
   margin-right: 20px;
   @include desktop {
     display: none;
@@ -17,6 +16,10 @@
 }
 
 @import "../fonts.scss";
+
+.preImage {
+  margin: auto;
+}
 
 .intro {
   font-family: "Apercu";
