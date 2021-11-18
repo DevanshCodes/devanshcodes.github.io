@@ -22,7 +22,7 @@ npm start
 
 ## Preview
 
-This website is up on the following domain: [devanshagarwal.me](https://devanshagarwal.me)
+This website is up on the following domain: [devanshag.com](https://devanshag.com)
 
 
 ## License
