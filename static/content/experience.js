@@ -1,5 +1,13 @@
 const experiences = [
   {
+    company: "Skit.ai",
+    url: "http://skit.ai/",
+    time: "Nov 2021 - Current",
+    position: "Software Developer Intern",
+    description:
+      "Contributing on Skit's client-side projects, writing modern, performant, maintainable code for a diverse array of internal projects. Working with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, ReactJS.",
+  },
+  {
     company: "Haast",
     url: "https://haast.co//",
     time: "Jan 2021 - July 2021",
