@@ -5,7 +5,7 @@ const experiences = [
     time: "Nov 2021 - Current",
     position: "Software Developer Intern",
     description:
-      "Contributing on Skit's client-side projects, writing modern, performant, maintainable code for a diverse array of internal projects. Working with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, ReactJS.",
+      "Contributing on Skit's client-side projects, writing modern, performant, maintainable code for a diverse array of internal projects. Working with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Python, ReactJS, Django.",
   },
   {
     company: "Haast",
