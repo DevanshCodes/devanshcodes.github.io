@@ -1,11 +1,19 @@
 const experiences = [
   {
-    company: "Skit.ai",
-    url: "http://skit.ai/",
-    time: "Nov 2021 - Current",
+    company: "Société Générale",
+    url: "https://www.societegenerale.com/en",
+    time: "May 2022 - July 2022",
     position: "Software Developer Intern",
     description:
-      "Contributing on Skit's client-side projects, writing modern, performant, maintainable code for a diverse array of internal projects. Working with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Python, ReactJS, Django.",
+      "Implemented a dashboard which displays key parameters of a sub-business unit's functioning and highlights where they're lacking. Dashboard was made with the help of highcharts and arclab widgets, fetching the data from a static Excel file, processing the data in JavaScript, and then passing the processed data to widgets. Developed Dashboard was used by multiple sub-business units in our business unit on a daily basis thereafter.",
+  },
+  {
+    company: "Skit.ai",
+    url: "http://skit.ai/",
+    time: "Nov 2021 - March 2021",
+    position: "Software Developer Intern",
+    description:
+      "Contributed on Skit's client-side projects, which is an AI-first SaaS voice automation company. Wrote modern, performant, maintainable code for a diverse array of internal projects. Implemented end-to-end features in their internal dashboard which is being used by multiple different teams daily and required the implementation of my learned problem solving and data structures knowledge. Worked with a variety of different languages, platforms, and frameworks such as JavaScript, TypeScript, Python, ReactJS, Django.",
   },
   {
     company: "Haast",
