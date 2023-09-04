@@ -27,21 +27,7 @@ class MainPage extends Component {
     return (
       <div className="app" ref={el => (this.div = el)}>
         <div ref={el => (this.div = el)}>
-  Hello
-          // <Switch />
-          // <Intro />
-          // <SectionBackground />
-          // <Skills />
-          // <Experience />
-          // <FeaturedProjects />
-          // <OtherProjects />
-          // {/* <BlogRoll/> */}
-          // <Whatsnext />
-          // {/* <Blogs/> */}
-          // <Footer />
-          // <button id="top-button">
-          //   <img src="images/emojis/pointing-up.png" alt="" />
-          // </button>
+          Hello
         </div>
       </div>
     )
